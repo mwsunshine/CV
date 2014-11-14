@@ -1,0 +1,203 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Mincong \textsc{Zhang}
+	}\bigskip \\ \href{https://github.com/mincongzhang}{github.com/mincongzhang} \\mincong.zhang@hotmail.com\\ Telephone: +44 (0) 7564 609708 \par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}
+
+2013-now
+&\textbf{University College London}\\
+& MSc Computer Graphics, Vision and Imaging\\
+\\
+2009-2013 
+&\textbf{Beijing University of Posts and Telecommunications}\\
+&\textbf{\& Queen Mary, University of London}\\
+& BSc Telecommunications Engineering with Management\\
+&\emph{Double-degree, First Class Honours}\\
+\end{tabular}
+
+%Section: Internship
+\section{Internship}
+\begin{tabular}{rp{12cm}}
+\textsc{APR-AUG} & \textbf{Ericsson - Region North East Asia (RNEA)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Beijing}}\\
+\textsc{2013}&Intern in a Cross Function Team in Development Unit for IP \& Broadband department\\
+\\
+&\textbf{Project on PT router}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Research \& Development}}\\
+&Imported a web server (based on https protocol) into PT router\\
+& - I developed the frontend website framework, including login, main pages, Data Communication Network (DCN) page and Software Download (SWDL) page\\
+& - Applied Ajax and Json, and focused on the cross-browser ability\\
+\\
+&\textbf{Project on IP Operating System (IPOS)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Integration \& Verification}}\\
+&White box test for IPOS\\
+& - Unit test: applied Google C++ Testing Framework\\
+\\
+&\textbf{ Project on SP switch} 
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Integration \& Verification}}\\
+&Black box test for Quality of Service (QoS)\\
+& - Perl scripting to verify the Congestion Avoidance functions on SP switch\\
+\end{tabular}
+
+%Section: Research Experience
+\section{Research Experience}
+\begin{tabular}{rp{12cm}}
+2012-2013 & \textbf{Graduation Project: The influence of amplifier settings on the perception of 'heaviness' in guitar timbre}\\
+& - Aims to objectively measure the relationship between amplifier settings and the perception of 'heaviness'\\
+& - Involving:Python scripting, website construction (Django), database (SQLite), signal processing (Matlab), Algorithm Design\\
+& - More than 900 registered users from UK and China participated in the final web-based listening test\\
+& - Repo: \href{https://github.com/mincongzhang/UnderGradFinalProject}{github.com/mincongzhang/UnderGradFinalProject}\\
+\\
+& - Supported by 2 supervisors from Centre for Digital Music in Queen Mary, University of London\\
+& - Results contribute to the fields of emotion detection in music and genre\\
+\end{tabular}
+
+\section{}
+\begin{tabular}{rp{12cm}}
+2011-2012 & \textbf{Project: Research into the Ruin Probability Problems (Actuarial Science)}\\
+& - Introduced multiple transition states into ruin probability matrix, to find out the absorption time of the Birth-death Chain with two absorption barriers\\
+& - Team leader(5 members), Won \emph{The Beijing Municipal Research Award}\\
+& - Publication:\\
+&\textbf{Mincong Zhang}, Hao Zhang, Tingting Wang   \emph{The Gambler's Ruin Problem with Multiple Transition States}\\
+&\emph{The 7th International Conference on Matrix and Operator Theory}\\
+
+\end{tabular}
+
+
+%Section: Projects
+\section{Projects in University}
+\begin{tabular}{rp{12cm}}
+2013-2014 &Machine Vision
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+         & - \href{https://github.com/mincongzhang/MachineVision}{MoG model, Panorama, tracking , etc.}\\
+2013-2014 &Acquisition and Processing of 3D Geometry
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+         & - \href{https://github.com/mincongzhang/3D_Retrieval_scan2search}{Scan-to-search 3D retrieval system}\\
+         & - \href{https://github.com/mincongzhang/3D_Retrieval_sketch2search}{Sketch-to-search 3D retrieval system}\\
+         & - \href{https://github.com/mincongzhang/PlayWithOpenMesh}{ICP alignment/Mesh denoising system}\\
+2013-2014 &Image Processing
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+         & - \href{https://github.com/mincongzhang/PoissionEditing}{Poission Editing}\\
+2013-2014 &Computer Graphics
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+         & - \href{https://github.com/mincongzhang/PlayWithOpenGL}{Implement Ray Tracing, Clipping, Robot modelling and Splines}\\
+Nov 2013 &J.P. Morgan and the Code for Good Challenge
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{24-hour Hackathon}}\\
+         & - An android app to collect customer information for micro-ﬁnance ﬁrms\\
+         & - Including Client Registrations, Group Registrations, Loan Applications and Offline Mode\\
+         & - I developed the frontend User Interface of the Group Registrations\\
+         & - Joint runners-up team\\
+2011-2012 &Advanced Transforms:Wavelet/Fast Fourier transform
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+2011-2012 &Digital Signal Processing: Butterworth filter design
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Coursework}}\\
+\end{tabular}
+
+%Section: Positions of responsibility
+\section{Positions of responsibility}
+\begin{tabular}{rp{12cm}}
+2013-now  & Staff in IT department of Chinese Students and Scholars Association at UCL Union\\
+          & - Manage the CSSA website and WeChat public platform\\
+2010-2011 &Vice president of the Animation Association \& the Guitar Association (Beijing)\\
+          & - Both of the associations received the title of \emph{Top Five associations}\\
+2009-2010 &In charge of Public Relations Department in the Red Cross Association\\
+          & - Organized First Aid Training for students\\
+2009-2010 &In charge of the Student-Staff Liaison Committee(with university staff in Beijing and London)\\
+\end{tabular}
+
+%Section: Skills
+\section{Skills}
+\begin{tabular}{rl}
+C++, Python, Perl, JavaScript (Ajax, Json), Django, OpenGL/OpenMesh, Matlab, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
+\end{tabular}
+
+%Section: Languages
+\section{Languages}
+\begin{tabular}{rl}
+ \textsc{Chinese:} Mothertongue  \textsc{English:}Fluent (IELTS: Overall 7)\\
+
+\end{tabular}
+
+\section{Interests}
+    Guitar (5 years),
+    Animation,
+    Tennis, Jitsu
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
