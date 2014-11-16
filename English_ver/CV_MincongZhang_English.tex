@@ -1,0 +1,201 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[normalem]{ulem} % useful for special effects such as strikethough, http://www.ling.ohio-state.edu/~jonsafari/latex/
+\usepackage{graphicx, hyperref, listings}
+\usepackage{appendix, pdfpages, color}
+
+
+\begin{document}
+\name{\huge{Mincong Zhang}}
+% \address used twice to have two lines of address
+%\address{Flat 6, 5 Millennium Drive, London, UK, E14 3GE}
+\address{\rightline{Email: mincong.zhang@hotmail.com}}
+\address{\rightline{Mobile: +44 (0) 7564 609708}}
+
+\begin{resume}
+\section{EDUCATION} 
+{\bf University College London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}\\
+MSc Computer Graphics, Vision and Imaging  \\
+
+{\bf Queen Mary, University of London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2009-2013}}\\
+{\bf \& Beijing University of Posts and Telecommunications}\\
+BSc Telecommunications Engineering with Management\\
+\emph{Double-degree, First Class Honours} \\
+
+%%%%%%%%%%%%INTERNSHIP%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTERNSHIP} 
+\renewcommand{\labelitemi}{-}
+
+%----------------------------------------------------------%
+{\bf 3D Industri.es (a 3D retrieval/printing startup company)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jun-Sep, 2014}}\\
+I built a experimental 3D retrieval system for the company. It is also my MSc final project
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item A shape-based retrieval system, which provides a ”scan to search” solution
+    \item Used spherical harmonics and shape histograms to describe 3D shapes
+    \item Involving: C++, MFC, OpenGL, OpenMesh
+    \item Repo: \href{https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore scan2search}{github.com/mincongzhang/3D\textunderscore  Retrieval\textunderscore scan2search}
+\end{itemize}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{-}
+
+%----------------------------------------------------------%
+{\bf Ericsson - Region North East Asia (RNEA)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr-Aug, 2013}}\\
+Worked in a Cross Function Team in Development Unit for IP \& Broadband department
+
+\begin{itemize}
+\itemsep -2pt % reduce space between items
+
+    \item Project on PT router\\
+    Imported a web server (based on https protocol) into PT router\vspace{-6pt}
+    \begin{itemize} \itemsep -2pt
+        \item I developed the frontend website framework
+        \item Including login, main pages, Data Communication Network (DCN) page and Software Download (SWDL) page
+        \item Applied Ajax and Json, and focused on the cross-browser ability
+    \end{itemize}
+    
+    \item Project on IP Operating System (IPOS)\\
+    White box test for IPOS\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items
+        \item Unit test: applied Google C++ Testing Framework
+    \end{itemize}
+    
+    \item Project on SP switch\\
+    Black box test for Quality of Service (QoS)\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items
+        \item Perl scripting to verify the Congestion Avoidance functions on SP switch
+    \end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%HACKATHON%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{HACKATHON} 
+\renewcommand{\labelitemi}{-}
+
+{\bf J.P. Morgan and the Code for Good Challenge}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+An android app to collect customer information for micro-ﬁnance ﬁrms, including Client Registrations, Group Registrations, Loan Applications and Offline Mode
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item I developed the frontend User Interface of the Group Registrations
+    \item Joint runners-up team
+\end{itemize}
+
+%%%%%%%%%%%RESEARCH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RESEARCH} 
+{\bf Undergraduate Final Project: The influence of amplifier settings on the perception of 'heaviness' in guitar timbre}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+Aims to objectively measure the relationship between amplifier settings and the perception of 'heaviness'
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item More than 900 registered users from UK and China participated in the final web-based listening test
+    \item Supported by 2 supervisors from Centre for Digital Music in Queen Mary, University of London
+    \item Results contribute to the fields of emotion detection in music and genre
+    \item Involving:Python scripting, website construction (Django), database (SQLite), signal processing (Matlab), Algorithm design
+    \item Repo: \href{https://github.com/mincongzhang/UnderGradFinalProject}{github.com/mincongzhang/UnderGradFinalProject}
+\end{itemize}
+
+{\bf Project: Research into the Ruin Probability Problems (Game Theory)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2011-2012}}\\
+Introduced multiple transition states into ruin probability matrix, to find out the absorption time of the Birth-death Chain with two absorption barriers\\
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Team leader(5 members), Won \emph{The Beijing Municipal Research Award}
+    \item Publication:\\
+\textbf{Mincong Zhang}, Hao Zhang, Tingting Wang   \emph{The Gambler's Ruin Problem with Multiple Transition States}\\
+\emph{The 7th International Conference on Matrix and Operator Theory}
+\end{itemize}
+
+%%%%%%%%%%%PROJECTS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECT EXPERIENCE}
+
+{\bf Automatic Furnishing}\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jul- Sep, 2014}}\
+(MSc Final Project)
+\begin{itemize}\itemsep -2pt % reduce space between items
+    \item Building on Unity3D with C\# scripts;
+    \item Editing Sweet Home 3D~\footnote{An open source 2D floor plan software: \url{http://www.sweethome3d.com/}} to export floor plan data;
+    \item Using Metropolis-Hastings and Simulated Annealing Algorithms for optimisation.
+\end{itemize}
+
+{\bf A Puzzle Game of Escaping the Room~\footnote{A video record for the game final testing: \url{http://www.youtube.com/watch?v=zq6UvweWJJs}}}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+(Using Unity3D in CAVE laboratory (ReaCToR system))
+\begin{itemize}\itemsep -2pt % reduce space between items
+    \item Scripts were written in C\#;
+    \item Interaction with laser reflecting;
+    \item Simple 3D objects modeling and texturing;
+    \item GitHub code collaboration (solving the merge problem);
+\end{itemize}
+
+{\bf File Transmission Using QR Code Streams}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Sep, 2012 - Jun, 2013}}\\
+(BEng Final Year Project)
+\begin{itemize}\itemsep -2pt % reduce space between items
+    \item An Android Application (programmed in Java)~\footnote{The app can be downloaded at Google Play: \url{https://play.google.com/store/apps/details?id=uol.watchitgotit}} (with XML GUI);
+    \item Encoding and decoding process was using Zxing library;
+    \item An inbuilt fast burst camera with adjustable burst frequency and automatic focus in smooth changes;
+    \item Parsed the file frames with a marker frame in real-time with the bursting camera;
+\end{itemize}
+
+{\bf Image Processing Using Matlab}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013}}
+\begin{itemize}\itemsep -2pt % reduce space between items
+    \item Region growing algorithm for image segmentation;
+    \item Optical character recognition using mathematical morphology;
+    \item Edge detection using Sobel and Prewitt edge detectors, Canny edge detector, a non-maximal suppression algorithm and hysteresis algorithms;
+    \item Image seamless blending based on the Poisson image editing algorithm;
+\end{itemize}
+
+{\bf Computer Graphics Using C++ and OpenGL}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013}}
+\begin{itemize}\itemsep -2pt % reduce space between items
+    \item Ray tracing of shadowing and reflection;
+    \item Clipping using Sutherland-Hodgman algorithm;
+    \item Drawing a 3D robot, adding texture and animating it~\footnote{A video record for the animating robot: \url{http://www.youtube.com/watch?v=Wtmnorw7S_0}};
+    \item Implementation of B-splines;
+\end{itemize}
+
+% {\bf LEGO Mind-storm Robot Programming}
+% \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}
+% \begin{itemize}\itemsep -2pt % reduce space between items
+%     \item Detected targets in an arena with obstacles (programmed in Java);
+%     \item The detecting robot (Agent 1) communicates with PC (Agent 2) in real-time (programmed in JASON);
+% \end{itemize}
+
+
+
+
+
+
+
+{\bf Social Network Mobile Application Intern Tester}\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jul - Aug, 2012}} \\
+ Product Testing Division, Technical Department, Shanghai Sanchaji IT Co. Ltd., Shanghai, China
+                \begin{itemize}  \itemsep -2pt % reduce space between items
+                \item  Built the test cases of three modules of mobile client;
+                \item  Took part in actual testing and bug reporting of iOS and Android applications;
+                \item  Collected feedback from the backstage and different app stores;
+                \item  Developed a desktop pet based on the cartoon character of this app for product promotion;
+                \end{itemize}
+%---------------------T.B.C-------------------------------------------
+
+\section{LANGUAGES}
+Chinese and English
+
+\section{ACTIVITIES \\ \& INTERESTS} 
+Sketching; reading books about psychology and future changes prediction on Internet or economy; Following apps or hardware with novel utilities
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
