@@ -1,0 +1,191 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res} 
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[normalem]{ulem} % useful for special effects such as strikethough, http://www.ling.ohio-state.edu/~jonsafari/latex/
+\usepackage{graphicx, hyperref, listings}
+\usepackage{appendix, pdfpages, color}
+
+
+\begin{document}
+\name{\huge{Mincong Zhang}}
+% \address used twice to have two lines of address
+%\address{Flat 6, 5 Millennium Drive, London, UK, E14 3GE}
+\address{\rightline{Email: mincong.zhang@hotmail.com}}
+\address{\rightline{Mobile: +44 (0) 7564 609708}}
+
+\begin{resume}
+
+%%%%%%%%%%%%WORK%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{WORK}
+{\bf Factset Europe Ltd}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jan-now, 2015}}\\
+Working in Market Data department\\
+Real time market data with C++, Boost and multithreading
+
+%%%%%%%%%%%%EDUCATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDUCATION} 
+{\bf University College London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}\\
+MSc Computer Graphics, Vision and Imaging
+
+{\bf Queen Mary, University of London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2009-2013}}\\
+{\bf \& Beijing University of Posts and Telecommunications}\\
+BSc Telecommunications Engineering with Management\\
+\emph{Double-degree, First Class Honours}
+
+%%%%%%%%%%%%INTERNSHIP%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTERNSHIP} 
+\renewcommand{\labelitemi}{-}
+
+%----------------------------------------------------------%
+{\bf 3D Industri.es (a 3D retrieval/printing startup company)}\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jun-Dec, 2014}}\\
+Part-time: helped to improving a 3D retrieval system
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Experimented a `partial-search' 3D retrieval system
+\end{itemize}
+
+MSc final project: Built a experimental 3D retrieval system
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item A shape-based retrieval system, which provides a scan-to-search solution
+    \item Used spherical harmonics and shape histograms to describe 3D shapes
+    \item With C++, MFC, OpenGL, OpenMesh
+    \item Repo: \href{https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore scan2search}{github.com/mincongzhang/3D\textunderscore  Retrieval\textunderscore scan2search}
+\end{itemize}
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{-}
+
+%----------------------------------------------------------%
+{\bf Ericsson - Region North East Asia (RNEA)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr-Aug, 2013}}\\
+Worked in a Cross Function Team in Development Unit for IP \& Broadband department
+
+\begin{itemize}
+\itemsep -2pt % reduce space between items
+
+    \item Project on PT router\\
+    Imported a web server (based on https protocol) into PT router\vspace{-6pt}
+    \begin{itemize} \itemsep -2pt
+        \item I developed the frontend website framework
+        \item Including login, main pages, Data Communication Network (DCN) page and Software Download (SWDL) page
+        \item Applied Ajax and Json, and focused on the cross-browser ability
+    \end{itemize}
+    
+    \item Project on IP Operating System (IPOS)\\
+    White box test for IPOS\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items
+        \item Unit test: applied Google C++ Testing Framework
+    \end{itemize}
+    
+    \item Project on SP switch\\
+    Black box test for Quality of Service (QoS)\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items
+        \item Perl scripting to verify the Congestion Avoidance functions on SP switch
+    \end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%HACKATHON%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{HACKATHON} 
+\renewcommand{\labelitemi}{-}
+
+{\bf J.P. Morgan and the Code for Good Challenge}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+An android app to collect customer information for micro-finance firms, including Client Registrations, Group Registrations, Loan Applications and Offline Mode
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item I developed the frontend User Interface of the Group Registrations
+    \item Joint runners-up team
+\end{itemize}
+
+%%%%%%%%%%%RESEARCH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RESEARCH} 
+{\bf Undergraduate Final Project: The influence of amplifier settings on the perception of `heaviness' in guitar timbre}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+Aims to objectively measure the relationship between amplifier settings and the perception of `heaviness'
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item More than 900 registered users from UK and China participated in the final web-based listening test
+    \item Supported by 2 supervisors from Centre for Digital Music in Queen Mary, University of London
+    \item Results contribute to the fields of emotion detection in music and genre
+    \item Involving:Python scripting, website construction (Django), database (SQLite), signal processing (Matlab), Algorithm design
+    \item Repo: \href{https://github.com/mincongzhang/UnderGradFinalProject}{github.com/mincongzhang/UnderGradFinalProject}
+\end{itemize}
+
+%%%%%%%%%%%PROJECTS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PROJECTS}
+{\bf Machine Vision}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Realtime augmented reality
+    \item Apple Detection (EM algorithm), Panorama, etc.
+    \item Repo: \href{https://github.com/mincongzhang/MachineVision}{github.com/mincongzhang/MachineVision}
+\end{itemize}
+
+{\bf Acquisition and Processing of 3D Geometry}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item \href{https://github.com/mincongzhang/3D_Retrieval_sketch2search}{Sketch-to-search 3D retrieval system}
+    \item \href{https://github.com/mincongzhang/PlayWithOpenMesh}{ICP alignment/Mesh denoising system}
+    \item Repo: \href{https://github.com/mincongzhang/3DGeometry}{github.com/mincongzhang/3DGeometry}
+\end{itemize}
+
+{\bf Computer Graphics}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item \href{https://github.com/mincongzhang/3D_Retrieval_sketch2search}{Sketch-to-search 3D retrieval system}
+    \item Implemented Ray Tracing, Clipping, Robot modelling and Splines
+    \item Repo: \href{https://github.com/mincongzhang/ComputerGraphics}{github.com/mincongzhang/ComputerGraphics}
+\end{itemize}
+
+{\bf Image Processing}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Face Detection \& Poission Editing
+    \item Repo: \href{https://github.com/mincongzhang/ImageProcessing/tree/master/PostGrad}{github.com/mincongzhang/ImageProcessing}
+\end{itemize}
+
+{\bf Advanced Transforms}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2011-2012}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Wavelet/Fast Fourier transform
+    \item Repo: \href{https://github.com/mincongzhang/Toolbox/tree/master/AdvancedTransform}{github.com/mincongzhang/Toolbox/tree/master/AdvancedTransform}
+\end{itemize}
+
+\section{POSITIONS}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+
+    \item Staff in IT department of Chinese Students and Scholars Association at UCL Union \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Managed the CSSA website and WeChat public platform
+    \end{itemize}
+    
+    \item Vice president of the Animation \& the Guitar Societies \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2010-2011}}\vspace{-6pt}
+    \begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Both of the societies won the title of Top Five Associations
+    \end{itemize}
+    \item In charge of the Student-Staff Liaison Committee(with university staff in Beijing and London)
+    \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2009-2010}}
+\end{itemize}
+
+
+\section{SKILLS}
+C++, OpenGL/OpenMesh, Boost, Python, Perl, Matlab 
+
+\section{INTERESTS}
+Guitar (5 years), Animation, Tennis, Jitsu
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
