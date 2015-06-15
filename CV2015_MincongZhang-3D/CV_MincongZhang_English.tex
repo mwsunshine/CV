@@ -15,19 +15,24 @@
 \address{\rightline{Mobile: +44 (0) 7564 609708}}
 
 \begin{resume}
-
+\renewcommand{\labelitemi}{-}
 
 %%%%%%%%%%%%EDUCATION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{EDUCATION} 
-{\bf University College London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}\\
-MSc Computer Graphics, Vision and Imaging
+{\bf University College London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item MSc Computer Graphics, Vision and Imaging
+\end{itemize}
 
-{\bf Queen Mary, University of London} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2009-2013}}\\
-{\bf \& Beijing University of Posts and Telecommunications}\\
-BSc Telecommunications Engineering with Management\\
-\emph{Double-degree, First Class Honours}
+{\bf Queen Mary, University of London \&} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2009-2013}}\\
+{\bf Beijing University of Posts and Telecommunications}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item BSc Telecommunications Engineering with Management
+    \item Double-degree, First Class Honours
+\end{itemize}
+
 
 %%%%%%%%%%%%WORK%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,60 +40,83 @@ BSc Telecommunications Engineering with Management\\
 \section{WORK}
 {\bf Factset Europe Ltd}
 \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jan-now, 2015}}\\
-Working in Market Data department\\
+Working in the Market Data department\\
 Real time market data with C++, Boost and multithreading
 
 %%%%%%%%%%%%3D related projects%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{3D RELATED PROJECTS}
-\renewcommand{\labelitemi}{-}
 %----------------------------------------------------------%
-{\bf Internship in 3D Industri.es}\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov-Dec, 2014}}\\
-Helped to improve a 3D retrieval system
+{\bf MSc Thesis: 3D retrieval system (C++, OpenGL, OpenMesh)} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jun-Sep, 2014}}\\
+A shape-based ``Scan to Search'' retrieval system
+~\footnote{``Scan to Search'' with video demo: \href
+{https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore scan2search}
+{github.com/mincongzhang/3D\textunderscore  Retrieval\textunderscore scan2search}}
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item Experimented a ``partial-search'' 3D retrieval system
-\end{itemize}
-
-{\bf MSc Thesis: Built a experimental 3D retrieval system} \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Jun-Sep, 2014}}\\
-A shape-based ``scan to search'' retrieval system
-\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Aiming to search for similar models with scanned noisy 3D models
     \item Using spherical harmonics and shape histograms to describe 3D shapes
-    \item Using C++, MFC, OpenGL, OpenMesh
-    \item Repo: \href{https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore scan2search}{github.com/mincongzhang/3D\textunderscore  Retrieval\textunderscore scan2search}
 \end{itemize}
 
-{\bf Code Jam: Oculus' Mobile VR Jam}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr, 2015}}\\
-Design and implement a xxx game
+%----------------------------------------------------------%
+{\bf Internship in 3D Industri.es (C++, OpenGL, OpenMesh)}\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov-Dec, 2014}}\\
+Helped to improve a ``Partial Search'' 3D retrieval system
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item A
-    \item Multiplayer
-    \item C
-    \item why we failed:
+    \item Built a experimental retrieval system:\\
+    Retrieval results based on multiple queries
+    ~\footnote{``Partial Search'' with video demo:
+        \href
+        {https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore PartialSearch}
+        {github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore PartialSearch}
+    }
+    \item Helped to improve their retrieval system
 \end{itemize}
 
-{\bf Coursework: Acquisition and Processing of 3D Geometry}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+%----------------------------------------------------------%
+{\bf Code Jam: Oculus' Mobile VR Jam 2015 (C\#, Unity3D)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr-May, 2015}}\\
+A 2-player VR game ``Code-X'', including zombie survival, room escaping and loads of player collaboration
+~\footnote{ ``Code-X'' with video demo:
+\href
+{http://challengepost.com/software/code-x}
+{challengepost.com/software/code-x}
+}
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item \href{https://github.com/mincongzhang/3D_Retrieval_sketch2search}{Sketch-to-search 3D retrieval system}
-    \item \href{https://github.com/mincongzhang/PlayWithOpenMesh}{ICP alignment/Mesh denoising system}
-    \item Repo: \href{https://github.com/mincongzhang/3DGeometry}{github.com/mincongzhang/3DGeometry}
+    \item Implemented most of the scenes and their interaction with the player
+    \item Imporved and refactored the zombie AI \& the player shooting code
 \end{itemize}
 
-{\bf Coursework: Computer Graphics}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+%----------------------------------------------------------%
+{\bf Coursework: 3D Geometry (C++, OpenGL, OpenMesh) \hfill{\textcolor[rgb]{0.7,0.7,0.7}{2014}}}
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item Implemented Ray Tracing, Clipping, Robot modelling and Splines
-    \item Repo: \href{https://github.com/mincongzhang/ComputerGraphics}{github.com/mincongzhang/ComputerGraphics}
+    \item A ``Sketch to Search'' 3D retrieval system:\\
+    matching histograms of 2D sketch to 3D objects' light-field-silhouettes
+    ~\footnote{ ``Sketch to Search'' with video demo:
+        \href
+        {https://github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore sketch2search}
+        {github.com/mincongzhang/3D\textunderscore Retrieval\textunderscore sketch2search}
+    }
+    \item 3D denoising: Bilateral filter, Laplacian smoothing, etc.
+    \item ICP alignment: reconstructing 3D surfaces from different scans
 \end{itemize}
 
-{\bf Coursework: Machine Vision}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2013-2014}}
+{\bf Coursework: Computer Graphics (C++, OpenGL)}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2014}}
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item Augmented reality XXX TODO fill the content
-    \item Apple Detection (EM algorithm), Panorama, etc.
-    \item Repo: \href{https://github.com/mincongzhang/MachineVision}{github.com/mincongzhang/MachineVision}
+    \item Implemented Ray Tracing, Clipping, Robot Modelling and Splines
+\end{itemize}
+
+{\bf Coursework: Machine Vision (Matlab)
+    ~\footnote{ Machine Vision repo:
+        \href
+        {https://github.com/mincongzhang/MachineVision}
+        {github.com/mincongzhang/MachineVision}
+    }
+}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2014}}
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item Augmented Reality tracking
+    \item Color Based Object Detection (EM algorithm), Panorama, etc.
 \end{itemize}
 
 \renewcommand{\labelitemi}{$\bullet$}
@@ -113,7 +141,6 @@ Worked in a Cross Function Team in Development Unit for IP \& Broadband departme
     Imported a web server (based on https protocol) into PT router\vspace{-6pt}
     \begin{itemize} \itemsep -2pt
         \item I developed the frontend website framework
-        \item Including login, main pages, Data Communication Network (DCN) page and Software Download (SWDL) page
         \item Applied Ajax and Json, and focused on the cross-browser ability
     \end{itemize}
     
@@ -131,6 +158,24 @@ Worked in a Cross Function Team in Development Unit for IP \& Broadband departme
 
 \end{itemize}
 
+%%%%%%%%%%%RESEARCH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RESEARCH} 
+{\bf BSc Thesis: The influence of amplifier settings on the perception of `heaviness' in guitar timbre
+    ~\footnote{Bsc Thesis:
+        \href
+        {https://github.com/mincongzhang/UnderGradFinalProject}
+        {github.com/mincongzhang/UnderGradFinalProject}
+    }
+}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
+Aiming to objectively measure the relationship between amplifier settings and the perception of `heaviness'
+\begin{itemize}\itemsep -2pt % reduce space between items\
+    \item More than 900 registered users from UK and China participated in the final web-based listening test
+    \item Results contribute to the fields of emotion detection in music and genre
+    \item Involving:Python scripting, website building (Django), database (SQLite), signal processing (Matlab), algorithm design
+\end{itemize}
+
 %%%%%%%%%%%%%%HACKATHON%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{HACKATHON} 
@@ -138,19 +183,15 @@ Worked in a Cross Function Team in Development Unit for IP \& Broadband departme
 
 {\bf Factset Internal Hackathon}
 \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr, 2015}}\\
-Detect delivery
+Detecting lunch delivery bags in the kitchen (with Raspberry Pi \& camera)
 \begin{itemize}\itemsep -2pt % reduce space between items\
-    \item A
-    \item C
+    \item I implemented the algorithm to detect bags in images
+    \item Algorithm is robust to noise and moving objects (like human body)
 \end{itemize}
 
 {\bf Factset Monthly Mini Hackathon}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Apr, 2015}}\\
-Detect delivery
-\begin{itemize}\itemsep -2pt % reduce space between items\
-    \item A
-    \item C
-\end{itemize}
+\hfill{\textcolor[rgb]{0.7,0.7,0.7}{2015}}\\
+Boggle game, TODO game and month count TODO, etc.
 
 {\bf J.P. Morgan and the Code for Good Challenge}
 \hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
@@ -160,42 +201,24 @@ An android app to collect customer information for micro-finance firms, includin
     \item Joint runners-up team
 \end{itemize}
 
-%%%%%%%%%%%RESEARCH%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{RESEARCH} 
-{\bf Undergraduate Final Project: The influence of amplifier settings on the perception of `heaviness' in guitar timbre}
-\hfill{\textcolor[rgb]{0.7,0.7,0.7}{Nov, 2013}}\\
-Aims to objectively measure the relationship between amplifier settings and the perception of `heaviness'
-\begin{itemize}\itemsep -2pt % reduce space between items\
-    \item More than 900 registered users from UK and China participated in the final web-based listening test
-    \item Supported by 2 supervisors from Centre for Digital Music in Queen Mary, University of London
-    \item Results contribute to the fields of emotion detection in music and genre
-    \item Involving:Python scripting, website construction (Django), database (SQLite), signal processing (Matlab), Algorithm design
-    \item Repo: \href{https://github.com/mincongzhang/UnderGradFinalProject}{github.com/mincongzhang/UnderGradFinalProject}
-\end{itemize}
+
 
 %%%%%%%%%%%PROJECTS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %--------------------------------------------------------------
 \section{PERSONAL PROJECTS}
-{\bf Trie Tree}\\
-{\bf AutoComposer}\\
-{\bf Realtime AR}\\
-{\bf Hack Into Windows Task Manager}\\
-{\bf Tools and scripts}\\
+Realtime AR, AutoComposer, Trie tree, hacking into Windows Task Manager, and some tools and scripts   
+~\footnote{Most of my projects :
+        \href
+        {https://github.com/mincongzhang}
+        {github.com/mincongzhang}
+    }
 
 \section{SKILLS}
 C++, OpenGL/OpenMesh, Boost, Python, Bash, Matlab 
 
 \section{INTERESTS}
-Guitar (5 years), Animation, Tennis, Jitsu
+Guitar (Blues, Metal), Animation, Tennis, Jitsu
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
